@@ -1,0 +1,75 @@
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1494820671827'); /* IE9*/
+  src: url('iconfont.eot?t=1494820671827#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1494820671827') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1494820671827') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1494820671827#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont_wap {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wap_date:before { content: "\e704"; }
+
+.icon-wap_more:before { content: "\e61d"; }
+
+.icon-wap_clear:before { content: "\e6da"; }
+
+.icon-wap_home:before { content: "\e696"; }
+
+.icon-wap_user:before { content: "\e653"; }
+
+.icon-wap_share:before { content: "\e61a"; }
+
+.icon-wap_checkbox:before { content: "\e6e4"; }
+
+.icon-wap_orders:before { content: "\e618"; }
+
+.icon-wap_radio:before { content: "\e72a"; }
+
+.icon-wap_radio_on:before { content: "\e663"; }
+
+.icon-wap_menu:before { content: "\e601"; }
+
+.icon-wap_close:before { content: "\e677"; }
+
+.icon-wap_course:before { content: "\e609"; }
+
+.icon-wap_star:before { content: "\e605"; }
+
+.icon-wap_true:before { content: "\e628"; }
+
+.icon-wap_microblog:before { content: "\e616"; }
+
+.icon-wap_wechat:before { content: "\e629"; }
+
+.icon-wap_checked:before { content: "\e602"; }
+
+.icon-wap_lesson:before { content: "\e64c"; }
+
+.icon-wap_vlive:before { content: "\e64e"; }
+
+.icon-wap_pay_bind:before { content: "\e650"; }
+
+.icon-wap_jobs:before { content: "\e664"; }
+
+.icon-wap_teacher:before { content: "\e667"; }
+
+.icon-wap_speak:before { content: "\e668"; }
+
+.icon-wap_blogs:before { content: "\e669"; }
+
+.icon-wap_ask:before { content: "\e66a"; }
+
+.icon-wap_enable:before { content: "\e66b"; }
+
+.icon-wap_disable:before { content: "\e66c"; }
+
+.icon-wap_back:before { content: "\e66d"; }
+

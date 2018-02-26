@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="../javascripts/jquery-1.12.0.min.js"></script>
+  </head>
+  <body>
+            <input type="text" class="username">
+            <br>
+            <input type="password" class="password">
+            <br>
+            <button class="btn">登入</button>
+            <div class="end"></div>
+  </body>
+  <script>
+      $(function() {
+          $('.btn').on('click',function() {
+              var name = $('.username').val();
+              var pass = $('.password').val();
+              var data = {
+                name: name,
+                pass: pass
+              }
+              $.ajax({
+                  type: 'POST',
+                  url:"/login",
+                  data: data,
+                  success:function(result){
+                      // console.log(result);
+                      $('.end').text(result);
+                      if(result == "登入成功") {
+                        //   alert(1);
+                          window.location.href='/home'
+                      }
+                  },
+                  error: function(err) {
+                    console.log(err);
+                  }
+              })
+          })
+      })
+  </script>
+</html>

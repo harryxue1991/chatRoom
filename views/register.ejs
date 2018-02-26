@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="../javascripts/jquery-1.12.0.min.js"></script>
+  </head>
+  <body>
+           <form action="/register" method="post">
+                <p>注册用户名: <input type="text" name="username" id="username"/> <span class="spaned"></span></p>
+                <p>注册密码: <input type="password" id="first-password" /></p>
+                <p>确认密码: <input type="password" id="second-password" name="password" /></p>
+                男: <input type="radio" name="sex" value="男"><br>
+                女: <input type="radio" name="sex" value="女"><br>
+                 <p>年龄 <input type="text" name="age" /></p>
+                 <p>email <input id="email" type="text"  title="email"  name="email" /></p>
+                <input type="submit" value="Submit" />
+         </form>
+  </body>
+  <script>
+      $(function() {
+          $('#username').on('blur',function() {
+              var user = $('#username').val();
+              $.post({
+                  url: '/register/getusername',
+                  data: {'username':user},
+                  success: function(data) {
+                      $('.spaned').text(data);
+                    //   console.log(data)
+                  },
+                  error: function(err) {
+                      console.log(err)
+                  }
+              })
+          });
+            $('#second-password').on('blur',function() {
+                if($('#first-password').val() != $('#second-password').val()) {
+                    $('#first-password,#second-password').val('');
+                    $('#first-password').focus();
+                    alert('输入的密码不一致,请重新输入');
+                }  
+            });
+            $('#email').on('blur',function() {
+                var str = document.getElementById('email').value.trim(); 
+                if(str.length!=0){ 
+                        reg=/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/; 
+                        if(!reg.test(str)){ 
+                        alert("对不起，您输入的email 格式不正确!");
+                    } 
+                } 
+          })
+      })
+  </script>
+</html>

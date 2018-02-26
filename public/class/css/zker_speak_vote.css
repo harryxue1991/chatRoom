@@ -1,0 +1,78 @@
+.zker_speak_main {
+  box-sizing: border-box;
+  padding: 0.9rem 0.8rem 0 0.9rem;
+}
+.speak_vote {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+.zker_speak_vote_option {
+  background-color: #f5f5f5;
+  color: #5c5c5c;
+  margin-bottom: 0.75rem;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0.7rem 1.05rem 0.7rem 0.5rem;
+}
+.zker_speak_vote_content {
+  padding-left: 1.55rem;
+  font-size: 0.65rem;
+  line-height: 1rem;
+  text-align: justify;
+}
+.zker_speak_vote_content.speak_vote_content_over {
+  padding-left: 0.25rem;
+}
+.speak_vote_button {
+  color: #fff;
+  background-color: #0099ff;
+  width: 100%;
+  height: 2.3rem;
+  border-radius: 1.15rem;
+  text-align: center;
+  line-height: 2.3rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.iconfont_wap.speak_vote_icon {
+  float: left;
+  color: #fff;
+  background-color: #fff;
+  border: 1px solid #9b9b9b;
+  font-size: 0.55rem;
+  width: 0.85rem;
+  height: 0.85rem;
+  line-height: 0.85rem;
+  display: inline-block;
+  text-align: center;
+}
+.speak_vote_icon.vote_checkon {
+  background-color: #0099ff;
+  border: 1px solid #0099ff;
+}
+.speak_vote_progress_box {
+  display: none;
+}
+.speak_vote_progress {
+  margin: 0.5rem 0 0.125rem;
+  width: 80%;
+  height: 1.5rem;
+  margin-left: 0.25rem;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+.speak_vote_progress_value {
+  background-color: #8dcb8f;
+  line-height: 1.5rem;
+  font-size: 0.65rem;
+  height: 1.5rem;
+  box-sizing: border-box;
+  padding-left: 0.25rem;
+}
+.speak_vote_progress_number {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 1.2rem;
+  font-size: 0.75rem;
+}

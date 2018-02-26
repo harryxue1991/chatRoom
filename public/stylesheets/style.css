@@ -1,0 +1,31 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00B7FF;
+}
+ul li {
+  font-size: 20px;
+}
+p {
+  color: rebeccapurple;
+  font-size: 18px;
+}
+.time {
+  cursor: pointer;
+  color: red;
+}
+.login,.register {
+  cursor: pointer;
+  font-size: 20px;
+  float: right;
+  border: 1px solid #ccc;
+  margin-right: 30px;
+}
+.registers {
+  font-size: 20px;
+  float: right;
+  border: 1px solid #ccc;
+  margin-right: 30px;
+}

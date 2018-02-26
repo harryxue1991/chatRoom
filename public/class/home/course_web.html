@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>course_web</title>
+    <script>
+        var shuping = 'onorientationchange' in window ? 'orientationchange' : 'resize';
+            var isAndorid = /(Android)/i.test(navigator.userAgent);
+            var timer = null;
+            function setFontSize(){
+                var w = document.documentElement.clientWidth || document.body.clientWidth;
+                document.documentElement.style.fontSize = 40*w/720 + 'px';
+            }
+            setFontSize();
+            window.addEventListener(shuping, function (){
+                clearTimeout(timer);
+                timer = setTimeout(setFontSize, isAndorid?300:0);
+            }, false);
+    </script>
+    <link rel="stylesheet"  href="../css/common.css">
+    <link rel="stylesheet"  href="../css/course_web.css">
+</head>
+<body>
+    <header class="header"></header>
+    <main>
+        <header class="course_web_header">
+            <h1 class="course_web_title wto">HTML/CSS</h1>
+            <div class="course_web">
+                <ul class="clearfix">
+                    <!--course_webLi_active 为选中状态-->
+                    <li class="course_webLi course_webLi_active" data-value="all">全部</li>
+                    <li class="course_webLi"  data-value="primary">初级</li>
+                    <li class="course_webLi"  data-value="intermediate">中级</li>
+                    <li class="course_webLi"  data-value="senior">高级</li>
+                </ul>
+            </div>
+        </header>
+        <article>
+            <!--全部-->
+            <div class="course_web_all course_web_class" data-content="all">
+                <!--需要循环遍历的div  开始-->
+                <div class="course_web_box">
+                    <a class="cover_a" href="#"></a>
+                    <img class="course_web_pic left" src="../upload/pic2.png" alt="图片">
+                    <h2 class="course_web_h2 left">数据结构探险之树篇数据结构探险之数</h2>
+                    <div class="course_web_number"><span>392</span>人正在学习</div>
+                </div>
+                <!--需要循环遍历的div  结束-->
+                <div class="course_web_box">
+                    <a class="cover_a" href="#"></a>
+                    <img class="course_web_pic left" src="../upload/pic2.png" alt="图片">
+                    <h2 class="course_web_h2 left">数据结构探险之树篇数据结构探险之数范德萨发多</h2>
+                    <div class="course_web_number"><span>392</span>人正在学习</div>
+                </div>
+                
+            </div>
+            <!--初级-->
+            <div class="course_web_primary course_web_class" data-content="primary">
+                <div class="course_web_box">
+                    <a class="cover_a" href="#"></a>
+                    <img class="course_web_pic left" src="../upload/pic2.png" alt="图片">
+                    <h2 class="course_web_h2 left">初级数据结构探险之树篇数据结构探险之数</h2>
+                    <div class="course_web_number"><span>392</span>人正在学习</div>
+                </div>
+            </div>
+            <!--中级-->
+            <div class="course_web_intermediate course_web_class" data-content="intermediate">
+                 <div class="course_web_box">
+                    <a class="cover_a" href="#"></a>
+                    <img class="course_web_pic left" src="../upload/pic2.png" alt="图片">
+                    <h2 class="course_web_h2 left">中级数据结构探险之树篇数据结构探险之数</h2>
+                    <div class="course_web_number"><span>392</span>人正在学习</div>
+                </div>
+            </div>
+            <!--高级-->
+            <div class="course_web_senior course_web_class" data-content="senior">
+                 <div class="course_web_box">
+                    <a class="cover_a" href="#"></a>
+                    <img class="course_web_pic left" src="../upload/pic2.png" alt="图片">
+                    <h2 class="course_web_h2 left">高级数据结构探险之树篇数据结构探险之数</h2>
+                    <div class="course_web_number"><span>392</span>人正在学习</div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+    <script type="text/javascript" src="../js/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="../js/course_web.js"></script>
+</body>
+</html>

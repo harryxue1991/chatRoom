@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>course_class</title>
+    <script>
+        var shuping = 'onorientationchange' in window ? 'orientationchange' : 'resize';
+            var isAndorid = /(Android)/i.test(navigator.userAgent);
+            var timer = null;
+            function setFontSize(){
+                var w = document.documentElement.clientWidth || document.body.clientWidth;
+                document.documentElement.style.fontSize = 40*w/720 + 'px';
+            }
+            setFontSize();
+            window.addEventListener(shuping, function (){
+                clearTimeout(timer);
+                timer = setTimeout(setFontSize, isAndorid?300:0);
+            }, false);
+    </script>
+    <link rel="stylesheet"  href="../css/common.css">
+    <link rel="stylesheet"  href="../css/course_class.css">
+</head>
+<body>
+    <header class="header"></header>
+    <main  ontouchstart="">
+        <div class="course_class_box">
+            <h2 class="course_classTitle">Android</h2>
+            <div class="course_classItem">
+                <ul  class="clearfix">
+                    <li class="course_classLi"><a class="course_jumpClass" href="#">Java语言基础</a></li>
+                    <li class="course_classLi"><a class="course_jumpClass" href="#">JavaWeb</a></li>
+                    <li class="course_classLi"><a class="course_jumpClass" href="#">AndroidUI基础</a></li>
+                    <li class="course_classLi"><a class="course_jumpClass" href="#">Android数据与多媒体</a></li>
+                    <li class="course_classLi"><a class="course_jumpClass" href="#">Android网络交互</a></li>
+                    <li class="course_classLi"><a class="course_jumpClass" href="#">Android框架</a></li>
+                    <li class="course_classLi"><a class="course_jumpClass" href="#">Android项目案例</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="course_class_box">
+            <h2 class="course_classTitle">JAVAEE</h2>
+            <div class="course_classItem">
+                <ul  class="clearfix">
+                    <li class="course_classLi"><a class="course_jumpClass" href="#">JavaSE</a></li>
+                    <li class="course_classLi"><a class="course_jumpClass" href="#">数据库</a></li>
+                    <li class="course_classLi"><a class="course_jumpClass" href="#">web前端</a></li>
+                    <li class="course_classLi"><a class="course_jumpClass" href="#">JSP/Servlet</a></li>
+                    <li class="course_classLi"><a class="course_jumpClass" href="#">SSH框架</a></li>
+                    <li class="course_classLi"><a class="course_jumpClass" href="#">SSI框架</a></li>
+                    <li class="course_classLi"><a class="course_jumpClass" href="#">项目案例</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+    <script type="text/javascript" src="../js/jquery-1.12.0.min.js"></script>
+</body>
+</html>

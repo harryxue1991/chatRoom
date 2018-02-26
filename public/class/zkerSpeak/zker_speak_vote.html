@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>zker_speak_vote</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/course_chapter.css">
+    <link rel="stylesheet" href="../css/zker_speak_vote.css">
+    <link rel="stylesheet" href="../download/11/iconfont.css">
+</head>
+
+<body>
+    <header class="header"></header>
+    <main>
+        <header class="course_chapter_header">
+            <div class="videobox">
+                <video class="videoplay" width="100%" height="100%" controls src="../video/0101.mp4">
+                    <!--<source src="http://vjs.zencdn.net/v/oceans.mp4" type='video/mp4' />-->
+                    <!--<source src="../video/chrome.mp4" type='video/mp4' />-->
+                    <!--<source src="../video/0101.mp4" type='video/mp4' />-->
+                </video>
+                <!--video 自定义播放按钮-->
+                <div class="video_icon_all">
+                    <div class="video_icon_play"><img class="video_icon_img" src="../images/video_play.png" alt="播放按钮"></div>
+                    <div class="video_icon_load"><img class="video_icon_img" src="../images/video_load.png" alt="加载按钮"></div>
+                    <div class="video_icon_replay"><img class="video_icon_img" src="../images/video_replay.png" alt="重播按钮"></div>
+                    <div class="video_retry">
+                        <div class="video_retry_title">视频播放失败</div>
+                        <div class="video_retry_button"><span class="icon-zhongbo iconfont_wap icon_retry p_ibm"></span>重试</div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <article>
+            <div class="course_chapter_main">
+                <div class="course_chapter_main_header">
+                    <div class="clearfix course_chapter_main_title">
+                        <h2 class="left">课程简介</h2>
+                        <div class="right">
+                            <span class="share">      <!--分享按钮-->
+                                <span class="iconfont_wap icon-wap_share iconclass p_ibm"></span>
+                            <span class="button_class">分享</span>
+                            </span>
+                        </div>
+                    </div>
+                    <p class="course_chapter_main_introduce">了解selenium自动化测试没有那么难，本门课程从0开始带你走进自动化测试大门。从怎么做自动化测试到环境的搭建，以及最后对selenium中常用api的熟悉，让你对自动化不再陌生。</p>
+                </div>
+            </div>
+            <div class="zker_speak_main">
+                <div class="speak_vote">投票</div>
+                    <!--投票选项一-->
+                    <div class="zker_speak_vote_option">
+                        <span class="icon-wap_true iconfont_wap speak_vote_icon"  data-value="1"></span>   <!--选择按钮   vote_checkon 为选中状态-->
+                        <div class="zker_speak_vote_content">你一定看到过"只要知道你的电话号码,你的名下的所有银行存款、资产信息都会显露无疑" 的新闻,事实上,这些都是真实存在的.这些时间涉及到现在日益严峻的信息安全问题.</div>  <!--选择提交后需提交class 类名speak_vote_content_over-->  
+                        <!--选项结果开始,  需投票后显示-->
+                        <div class="speak_vote_progress_box">
+                            <div class="speak_vote_progress">
+                                <span class="speak_vote_progress_value p_ibt" style="width: 50%">50%</span>
+                            </div>
+                            <div class="speak_vote_progress_number"><span>50</span><span>/</span><span>100</span></div>
+                        </div>
+                        <!--选项结果结束,  需投票后显示-->
+                    </div>
+                     <!--投票选项二-->
+                    <div class="zker_speak_vote_option">
+                        <span class="icon-wap_true iconfont_wap speak_vote_icon"  data-value="2"></span>
+                        <div class="zker_speak_vote_content">选项2</div>
+                        <div class="speak_vote_progress_box">
+                            <div class="speak_vote_progress">
+                                <span class="speak_vote_progress_value p_ibt" style="width: 40%">40%</span>
+                            </div>
+                            <div class="speak_vote_progress_number"><span>40</span><span>/</span><span>100</span></div>
+                        </div>
+                    </div>
+                     <!--投票选项三-->
+                    <div class="zker_speak_vote_option">
+                        <span class="icon-wap_true iconfont_wap speak_vote_icon"  data-value="3"></span>
+                        <div class="zker_speak_vote_content">选项3</div>
+                        <div class="speak_vote_progress_box">
+                            <div class="speak_vote_progress">
+                                <span class="speak_vote_progress_value p_ibt" style="width: 10%">10%</span>
+                            </div>
+                            <div class="speak_vote_progress_number"><span>10</span><span>/</span><span>100</span></div>
+                        </div>
+                    </div>
+            
+                <a class="speak_vote_button p_ibt" href="javascript:;">投票</a>
+            </div>
+
+<!--分享弹窗-->
+            <div class="popup_share">
+                <div class="popup_share_box">
+                    <div id="popupwechat"  class="popupwechat p_ibt" rel="nofollow">    <!--微信分享按钮-->
+                        <span class="iconfont_wap icon-wap_wechat"></span>
+                    </div>
+                    <div  id="popupweibo" class="popupweibo p_ibt" rel="nofollow">     <!--微博分享按钮-->
+                        <span class="iconfont_wap icon-wap_microblog"></span>
+                    </div>
+                    <span ontouchstart="" class="iconfont_wap icon-wap_close  popupclose"></span>   <!--关闭按钮-->
+                </div>
+            </div>
+        </article>
+    </main>
+    <script>
+        var shuping = 'onorientationchange' in window ? 'orientationchange' : 'resize';
+        var isAndorid = /(Android)/i.test(navigator.userAgent);
+        var timer = null;
+        function setFontSize() {
+            var w = document.documentElement.clientWidth || document.body.clientWidth;
+            document.documentElement.style.fontSize = 40 * w / 720 + 'px';
+        }
+        setFontSize();
+        window.addEventListener(shuping, function () {
+            clearTimeout(timer);
+            timer = setTimeout(setFontSize, isAndorid ? 300 : 0);
+        }, false);
+    </script>
+<script type="text/javascript" src="../js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="../js/zker_speak_vote.js"></script>
+</body>
+
+</html>
